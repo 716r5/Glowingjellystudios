@@ -3,60 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LazyBird Studios</title>
+  <title>Glowing Jellyfish Studios</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css" />
   <link rel="preload" href="assets/fonts/ReenieBeanie-Regular.ttf" as="font" type="font/ttf" crossorigin>
 </head>
 <body>
-  <div class="hero-section">
+
+  <!-- Hero Section -->
+  <section class="hero">
     <nav>
-      <h1 class="logo">LazyBird Studios</h1>
-      <ul class="nav-links">
-        <li><a href="#style">My style</a></li>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#prices">Prices</a></li>
-        <li><a href="#book" class="book-now">Book Now</a></li>
+      <span class="logo">Glowing Jellyfish Studios</span>
+      <ul>
+        <li><a href="#">My style</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Prices</a></li>
+        <li><a href="#" class="btn-dark">Book Now</a></li>
       </ul>
     </nav>
 
-    <div class="intro-text">
-        <section id="services" class="services-section scroll-reveal">
+    <div class="intro-text" data-aos="fade-left">
       <p>Hi there,<br>
-      It's Sanjit. I have loved photography for years now...<br>
-      <em>Photography is not just about clicking a shutter, it's about a feeling.</em></p>
+         It’s Sanjit. I have loved photography for years now. I spent my 1st paycheck on a Sony digicam and when my daughter was born, another salary on a handheld cam recorder. 
+         <br> For me, photography is not just about clicking a shutter, it’s about a feeling. 
+         <br> Kind of like this, this and this.
+        <br>This, this and this feelings are personal and powerful.
+        <br> It will be an honour to be the one invited to freeze them in time for you.</p>
     </div>
 
-    <div class="call-to-action">
+    <div class="hero-buttons">
       <button class="cta" onclick="scrollToSection('#book')">Book Now</button>
       <button class="cta" onclick="scrollToSection('#contact')">Contact Me</button>
     </div>
-  </div>
 
-  <section id="services" class="services-section">
-    <h2>Other Services</h2>
-    <div class="services-grid">
-      <!-- Add image and text content here -->
+    <h1 class="hero-title">Glowing Jellyfish Studios</h1>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <div class="grid-2" data-aos="fade-up">
+      <div class="card"><img src="assets/images/garden.jpg" alt=""><h3>Garden photography</h3><p>Flowers might wither but the picture does not.</p></div>
+      <div class="card"><img src="assets/images/pet.jpg" alt=""><h3>Pet photography</h3><p>Majestic and surreal pics of your pet</p></div>
+    </div>
+
+    <div class="center-box" data-aos="zoom-in">Other services</div>
+
+    <div class="grid-3" data-aos="fade-up">
+      <div class="card"><h4>Birthday Picture</h4><img src="assets/images/birthday.jpg" alt=""></div>
+      <div class="card"><h4>Event pictures</h4><img src="assets/images/event.jpg" alt=""></div>
+      <div class="card"><h4>Family Photoshoot</h4><img src="assets/images/family.jpg" alt=""></div>
     </div>
   </section>
 
-  <section id="portfolio" class="portfolio-section">
-    <h2>My Portfolio</h2>
+  <!-- Portfolio -->
+  <section class="portfolio" data-aos="fade-up">
     <div class="portfolio-grid">
-      <!-- Add image thumbnails -->
+      <!-- 12 images go here -->
+      <img src="assets/images/pic1.jpg" alt="">
+      <!-- repeat... -->
     </div>
   </section>
 
-  <section id="book" class="booking-section">
-    <h2>Let's book a shoot!</h2>
-    <!-- Insert form or CTA -->
-  </section>
-
-  <section id="contact" class="contact-section">
-    <h2>Got Questions?</h2>
-    <!-- Contact Form -->
-  </section>
-
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
   <script src="scripts/main.js"></script>
 </body>
 </html>
