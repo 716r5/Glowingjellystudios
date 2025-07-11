@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LazyBird Studios</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preload" href="assets/fonts/ReenieBeanie-Regular.ttf" as="font" type="font/ttf" crossorigin>
+</head>
+<body>
+  <div class="hero-section">
+    <nav>
+      <h1 class="logo">LazyBird Studios</h1>
+      <ul class="nav-links">
+        <li><a href="#style">My style</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#book" class="book-now">Book Now</a></li>
+      </ul>
+    </nav>
+
+    <div class="intro-text">
+        <section id="services" class="services-section scroll-reveal">
+      <p>Hi there,<br>
+      It's Sanjit. I have loved photography for years now...<br>
+      <em>Photography is not just about clicking a shutter, it's about a feeling.</em></p>
+    </div>
+
+    <div class="call-to-action">
+      <button class="cta" onclick="scrollToSection('#book')">Book Now</button>
+      <button class="cta" onclick="scrollToSection('#contact')">Contact Me</button>
+    </div>
+  </div>
+
+  <section id="services" class="services-section">
+    <h2>Other Services</h2>
+    <div class="services-grid">
+      <!-- Add image and text content here -->
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio-section">
+    <h2>My Portfolio</h2>
+    <div class="portfolio-grid">
+      <!-- Add image thumbnails -->
+    </div>
+  </section>
+
+  <section id="book" class="booking-section">
+    <h2>Let's book a shoot!</h2>
+    <!-- Insert form or CTA -->
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Got Questions?</h2>
+    <!-- Contact Form -->
+  </section>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
